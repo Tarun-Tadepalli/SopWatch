@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timer</title>
+    <link rel="stylesheet" href="settimer.css">
+</head>
+<body>
+    <div class="settimer-container">
+        <h1>Set Timer</h1>
+        <div class="timer">00:00:00:00</div>
+        <div class="settimer-button-container">
+            <button class="set-reset-timer">Set</button>
+            <button class="start-stop-timer">Start</button>
+            <button class="lap-timer">Lap</button>
+        </div>
+        <div class="lap-list"></div>
+        <button class="download-laps">Download Laps</button>
+    </div>
+    <div class="set-timer-modal" style="display: none;">
+        <div class="modal-content">
+            <label>
+                Hours: 
+                <input type="number" class="hours-input" value="0" min="0">
+            </label>
+            <label>
+                Minutes: 
+                <input type="number" class="minutes-input" value="0" min="0" max="59">
+            </label>
+            <label>
+                Seconds: 
+                <input type="number" class="seconds-input" value="0" min="0" max="59">
+            </label>
+            <label>
+                Milliseconds: 
+                <input type="number" class="milliseconds-input" value="0" min="0" max="999">
+            </label>
+            <button class="set-time-button">Set Time</button>
+        </div>
+    </div>
+    <script src="settimer.js"></script>
+</body>
+</html>

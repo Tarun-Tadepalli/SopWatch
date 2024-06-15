@@ -1,0 +1,127 @@
+/* General styles for easy customization */
+:root {
+    --background-color: #bc75ba;
+    --container-bg-color: #9bf2d2;
+    --title-color: #00796b;
+    --button-bg-color-set-reset: #ff8080;
+    --button-bg-color-start-stop: #80cbc4;
+    --button-bg-color-lap: #4caf50;
+    --button-bg-color-download: #2196f3;
+    --button-text-color: #000000;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+}
+
+/* Applying background color */
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Set Timer container styling */
+.settimer-container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+/* Timer display styling */
+.timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Button container styling */
+.settimer-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--button-text-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.set-reset-timer {
+    background-color: var(--button-bg-color-set-reset);
+}
+
+button.start-stop-timer {
+    background-color: var(--button-bg-color-start-stop);
+}
+
+button.lap-timer {
+    background-color: var(--button-bg-color-lap);
+}
+
+button.download-laps {
+    background-color: var(--button-bg-color-download);
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Lap list styling */
+.lap-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.lap-list div {
+    padding: 5px 0;
+}
+
+/* Modal styling */
+.set-timer-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f69a9a;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+}

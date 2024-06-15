@@ -1,0 +1,68 @@
+/* General styles for easy customization */
+:root {
+    --background-color: #bc75ba;
+    --container-bg-color: #e0f7fa;
+    --title-color: #00796b;
+    --button-bg-color-set: #ff8080;
+    --button-bg-color-start: #328d84;
+    --button-text-color: #000000;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 15px;
+}
+
+/* Applying background color */
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--button-text-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.set-timer {
+    background-color: var(--button-bg-color-set);
+}
+
+button.start-timer {
+    background-color: var(--button-bg-color-start);
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9;
+}

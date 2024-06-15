@@ -1,0 +1,94 @@
+/* General styles for easy customization */
+:root {
+    --background-color: #bc75ba;
+    --container-bg-color: #9bf2d2;
+    --title-color: #00796b;
+    --button-bg-color-stop: #ff5252;
+    --button-bg-color-lap: #4caf50;
+    --button-bg-color-restart: #ff9800;
+    --button-bg-color-download: #2196f3;
+    --button-text-color: #ffffff;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+}
+
+/* Applying background color */
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Stopwatch container styling */
+.stopwatch-container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+/* Timer display styling */
+.timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Button container styling */
+.stopwatch-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--button-text-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.start-stop-timer {
+    background-color: var(--button-bg-color-stop);
+}
+
+button.lap-timer {
+    background-color: var(--button-bg-color-lap);
+}
+
+button.restart-timer {
+    background-color: var(--button-bg-color-restart);
+}
+
+button.download-laps {
+    background-color: var(--button-bg-color-download);
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Lap list styling */
+.lap-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.lap-list div {
+    padding: 5px 0;
+}
